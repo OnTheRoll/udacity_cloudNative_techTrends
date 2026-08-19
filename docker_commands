@@ -1,0 +1,17 @@
+## Docker commands used to build the application 
+docker build -t techtrends . 
+
+## Docker commands used to run the application
+docker run -p 3111:3111 techtrends
+
+## Docker commands used to get the application logs
+docker logs techtrends
+
+## Logs from the container running the TechTrends application
+ * Serving Flask app 'app'
+ * Debug mode: off
+[2026-08-19 02:13:57,648] INFO in app: Article "2020 CNCF Annual Report" retrieved.
+[2026-08-19 02:14:00,261] INFO in app: The "About us" page is retrieved
+[2026-08-19 02:14:06,062] INFO in app: A non-existing article is accessed.
+[2026-08-19 02:14:17,770] INFO in app: Article "Cloud is coool" is created
+[2026-08-19 02:14:22,514] INFO in app: Article "Cloud is coool" retrieved.
